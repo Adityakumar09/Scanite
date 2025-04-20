@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Security Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="scan-container">
+        <div class="scan-header">
+            <h1>DOMAIN SECURITY SCANNER</h1>
+            <div class="scan-line"></div>
+        </div>
+        
+        <div class="scan-form">
+            <div class="input-group">
+                <input type="text" id="domain" placeholder="Enter domain (e.g., example.com)" required>
+                <button id="scanBtn">INITIATE SCAN</button>
+            </div>
+        </div>
+        
+        <div class="scan-results" id="results">
+            <div class="results-header">
+                <span>SCAN RESULTS</span>
+                <div class="status-lights">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+            </div>
+            <div class="terminal" id="resultContent">
+                <div class="terminal-line">SYSTEM READY</div>
+                <div class="terminal-line">AWAITING INPUT...</div>
+            </div>
+            <button id="downloadBtn" class="download-btn">DOWNLOAD REPORT</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
